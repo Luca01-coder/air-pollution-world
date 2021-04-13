@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Air Quality </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script src="https://kit.fontawesome.com/69b5654055.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+      
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        
+        <h1>Air Quality</h1>
+      
+         <div class="locate">  
+           <div class="search">
+                <button class="place" id="btn_location">
+                    <i class="material-icons">place</i>
+                </button>
+            </div>
+            <div class="research">  
+                <input type="text" class="input"
+                placeholder="Search" id="city">
+                <button class="searchButton" id="btn_search">
+                      <i class="material-icons">search</i>
+                </button>
+            </div>
+         </div>
+            <div class="result"><br/>
+                    <section class="columns">
+                        <div class="column">
+                                <div class="city">Città:<br/>
+                                    <span>-</span>
+                                </div>
+                                <div class="day">
+                                    <span>-</span>
+                                </div>
+                               
+                        </div>
+                        <div class="column">
+                            <div class="indexAir">
+                                <span>-</span>
+                            </div>
+                        </div>
+                    </section>
+            </div>
+            
+          <div class="legend"> 
+            <img src="./img/pollution.jpeg"  id="pollution" alt="">
+            <p>Legend:</p>
+            <div class="index green"><p>0 - 50<br/>Good</p></div>
+            <div class="index yellow"><p>51 - 100<br/>Moderate</p></div>
+            <div class="index orange"><p>101 - 150<br/>Unhealthy for sensitive groups</p></div>
+            <div class="index red"><p>151 - 200<br/>Unhealthy</p></div>
+            <div class="index dark_violet"><p>201 - 300<br/>Very Unhealthy</p></div>
+            <div class="index brown"><p>>300<br/>Hazardous</p></div>
+           </div> 
+        
+        
+        <script src= "app.js"></script>
+        <footer>
+            Created by dev-luca &copy; 2021
+        </footer>
+    </body>
+</html>
